@@ -1,2 +1,2 @@
 # Indian-Cities-API
-An api which return all Indian cities in a Clean JSON Format
+An api which returns all Indian cities in a Clean JSON Format

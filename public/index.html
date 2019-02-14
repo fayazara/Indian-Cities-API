@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indian Cities Rest API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: Ubuntu;
+        }
+
+        .mb {
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            border-radius: 5px;
+        }
+    </style>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Indian Cities Rest API
+            </h1>
+            <p class="subtitle">
+                Get all Indian cities in a clean JSON format with this REST API.
+            </p>            
+        </div>  
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="card mb">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        All Cities
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <p>Endpoint <a target="_blank" href="/cities">cities</a></p>
+                        <p>This will return you all Indian cities</p>
+                        <strong>Response</strong>
+                        <pre>
+[
+  {
+    "City": "SGM",
+    "State": "Rajasthan",
+    "District": "Ganganagar"
+  },
+  {
+    "City": "STR",
+    "State": "Rajasthan",
+    "District": "Ganganagar"
+  },
+  {
+    "City": "A.Thirumuruganpoondi",
+    "State": "Tamil Nadu",
+    "District": "Coimbatore"
+  },
+...</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Specific City, District & State
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <p>Endpoint <a target="_blank" href="/cities?District=Dharwad">?parameter</a></p>
+                        <p>This will return you date about a mentioned Indian city or district or state</p>
+                        <strong>Response</strong>
+                        <pre>
+[
+    {
+        "City": "Alnavar",
+        "State": "Karnataka",
+        "District": "Dharwad"
+    },
+    {
+        "City": "Annigeri",
+        "State": "Karnataka",
+        "District": "Dharwad"
+    },
+    {
+        "City": "Hubli-Dharwad",
+        "State": "Karnataka",
+        "District": "Dharwad"
+    }
+]</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Search
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <p>Endpoint <a target="_blank" href="/cities?City_like=Mumb">?&lt;search_parameter&gt;</a></p>
+                        <p>Search for cities, states & districts</p>
+                        <strong>Response</strong>
+                        <pre>
+[
+    {
+        "City": "Greater Mumbai",
+        "State": "Maharashtra",
+        "District": "Mumbai (Suburban) and Mumbai"
+    },
+    {
+        "City": "Navi Mumbai",
+        "State": "Maharashtra",
+        "District": "Thane"
+    },
+    {
+        "City": "Navi Mumbai (Panvel, Raigarh)",
+        "State": "Maharashtra",
+        "District": "Raigarh"
+    }
+]</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
